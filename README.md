@@ -1,2 +1,2 @@
 # SoftUni-HomeWorks
-These are the solutions of homework in SoftUni.
+These are my homework solutions at SoftUni..
