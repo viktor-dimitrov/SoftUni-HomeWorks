@@ -40,7 +40,7 @@ function movingTarget(input) {
                 let radius1 = target - value;
                 let radius2 = target + value;
 
-                if ((radius1 < 0 || radius1 > targetsL - 1) || (radius2 < 0 || radius2 > targetsL - 1)) {
+                if (radius1 < 0 || radius2 > targetsL - 1 || target < 0 || target > targetsL - 1) {
                     console.log("Strike missed!");
                 } else {
                     targetsArray.splice(radius1, radius);
@@ -51,9 +51,7 @@ function movingTarget(input) {
         index++;
         commandLine = commandArray[index];
         
-        if (targetsArray.length <= 0) {
-            break;
-        }
+       
     }
     console.log(targetsArray.join('|'));
 }
