@@ -54,8 +54,8 @@ describe ("Testing carService methods", () => {
 
  
  it ("Testing .discount whit 1 and 10", () => {
-      
-    expect(carService.discount(1, 10)).to.be.equal("You cannot apply a discount");
+      expect(carService.discount(1, 10)).to.be.equal("You cannot apply a discount");
+    
 })
 
 //__________________________________________________________________________
@@ -75,9 +75,6 @@ it ("Testing .partsToBuy with arguments empty Array", ()=> {
 it ("Testing .partsToBuy with valid arguments ", ()=> {
      expect(carService.partsToBuy([{ part: "blowoff valve", price: 145 }, { part: "coil springs", price: 230 }],["blowoff valve", "injectors"])).to.be.equal(145)
  })
-
-
-
 
 })
 
