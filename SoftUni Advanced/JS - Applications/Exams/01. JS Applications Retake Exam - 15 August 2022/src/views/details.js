@@ -13,7 +13,6 @@ export async function detailsPage(ctx) {
 
     async function onDelete(e){
        const id = e.target.getAttribute('data-id')
-
        await delShoes(pairId);
        ctx.page.redirect("/dashboard");
     }

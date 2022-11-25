@@ -1,16 +1,34 @@
 import {html} from "../../node_modules/lit-html/lit-html.js";
+import { editShoes, getDetails } from "../api/data.js";
 
 
-export function editPage(ctx) {
-    ctx.render(editTemplater(editSubmit))
+export async  function editPage(ctx) {
+    const pairId = ctx.params.id;
+    const info = await getDetails(pairId)
+    console.log(info)
+   
+
+    ctx.render(editTemplater(info, editSubmit))
 
     async function editSubmit(e){
         e.preventDefault();
+
+        const formData = new FormData(e.target);
+        const inputs = Object.fromEntries(formData);
+        if(Object.values(inputs).some(value => value == '')){
+            alert("Invalid entries!");
+            return
+        }
+         
+        const {brand, model, imageUrl, release, designer, value} = inputs;
+        await editShoes(pairId, {brand, model, imageUrl, release, designer, value});
+        ctx.page.redirect(`/details/${pairId}`);
+
     }
 }
 
 
-function editTemplater(editSubmit){
+function editTemplater(info, editSubmit){
 return html`
         <section id="edit">
           <div class="form">
@@ -20,37 +38,37 @@ return html`
                 type="text"
                 name="brand"
                 id="shoe-brand"
-                placeholder="Brand"
+                value="${info.brand}"
               />
               <input
                 type="text"
                 name="model"
                 id="shoe-model"
-                placeholder="Model"
+                value="${info.model}"
               />
               <input
                 type="text"
                 name="imageUrl"
                 id="shoe-img"
-                placeholder="Image url"
+                value="${info.imageUrl}"
               />
               <input
                 type="text"
                 name="release"
                 id="shoe-release"
-                placeholder="Release date"
+                value="${info.release}"
               />
               <input
                 type="text"
                 name="designer"
                 id="shoe-designer"
-                placeholder="Designer"
+                value="${info.designer}"
               />
               <input
                 type="text"
                 name="value"
                 id="shoe-value"
-                placeholder="Value"
+                value="${info.value}"
               />
 
               <button type="submit">post</button>

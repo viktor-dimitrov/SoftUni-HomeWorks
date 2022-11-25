@@ -19,6 +19,7 @@ const nav = document.getElementsByTagName('nav')[0];
 
 
 page(ctxDecorator)
+page("/index.html","/")
 page("/", homePage);
 page("/login", loginPage);
 page("/register", registerPage);
