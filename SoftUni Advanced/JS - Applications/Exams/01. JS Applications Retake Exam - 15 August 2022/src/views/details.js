@@ -7,7 +7,11 @@ export async function detailsPage(ctx) {
     const pairId = ctx.params.id;
     const data = await getDetails(pairId);
     const user = getUserData();
-    const userId = user._id
+    let userId = 'guest'
+
+    if(user){
+      userId = user._id
+    }
 
     ctx.render(detailsTemplater(data, userId, onDelete));
 

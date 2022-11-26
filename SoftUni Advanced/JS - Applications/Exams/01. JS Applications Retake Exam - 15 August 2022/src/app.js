@@ -12,14 +12,11 @@ import { logout } from "./api/user.js";
 import { detailsPage } from "./views/details.js";
 import { editPage } from "./views/edit.js";
 
-
-
 const main = document.getElementsByTagName('main')[0];
 const nav = document.getElementsByTagName('nav')[0];
 
-
-page(ctxDecorator)
-page("/index.html","/")
+page(ctxDecorator);
+page("/index.html", "/");
 page("/", homePage);
 page("/login", loginPage);
 page("/register", registerPage);
@@ -31,7 +28,6 @@ page("/edit/:id", editPage)
 
 updateNav();
 page.start();
-
 
 function ctxDecorator(ctx, next) {
     ctx.render = (content) => render(content, main);

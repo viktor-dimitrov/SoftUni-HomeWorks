@@ -22,3 +22,8 @@ export async function delShoes(id){
 export async function editShoes(id, body){
     await put('/data/shoes/' + id, body)
 }
+
+export async function searchShoes(query){
+   const data = await get(`/data/shoes?where=brand%20LIKE%20%22${query}%22`);
+   return data;
+}
