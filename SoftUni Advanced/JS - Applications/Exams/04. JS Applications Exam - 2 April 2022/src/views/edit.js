@@ -11,6 +11,10 @@ import{html} from "../../node_modules/lit-html/lit-html.js";
         const form = document.getElementsByTagName('form')[0];
         const formData = new FormData(form);
         const body = Object.fromEntries(formData);
+        if(Object.values(body).some(input => input == '')){
+            alert("Invalid entries!");
+            return
+        }
 
         editPet(id, body)
         ctx.page.redirect(`/details/${id}`);
