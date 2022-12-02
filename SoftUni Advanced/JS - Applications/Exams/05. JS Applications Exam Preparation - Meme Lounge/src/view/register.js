@@ -1,19 +1,19 @@
 import {html} from "../../node_modules/lit-html/lit-html.js";
 import { register } from "../api/user.js";
+import { showError } from "./notify.js";
+
 
 
 export function registerView(ctx){
 
     ctx.render(registerTemplate(onReg));
 
-
-
     async function onReg(e){
         e.preventDefault();
         const formData = new FormData(e.target);
         const inputs = Object.fromEntries(formData);
         if(Object.values(inputs).some(input => input == '')){
-            alert("Invalid entries!");
+            showError("Invalid entries!");
             return;
         }
 

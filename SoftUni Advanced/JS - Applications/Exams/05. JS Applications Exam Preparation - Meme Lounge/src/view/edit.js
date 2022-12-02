@@ -1,5 +1,6 @@
 import {html} from "../../node_modules/lit-html/lit-html.js";
 import { editItem, getItemById } from "../api/data.js";
+import { showError } from "./notify.js";
 
 
 export async function editView(ctx){
@@ -14,7 +15,7 @@ export async function editView(ctx){
         const formData = new FormData(e.target);
         const inputs = Object.fromEntries(formData);
         if (inputs.title == '' || inputs.description == '' || inputs.imageUrl == ''){
-            alert("invalid entries!");
+            showError("invalid entries!");
             return
         }
 

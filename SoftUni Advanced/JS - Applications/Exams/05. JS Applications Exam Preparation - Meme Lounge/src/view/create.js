@@ -1,5 +1,6 @@
 import {html} from "../../node_modules/lit-html/lit-html.js";
 import { createItem } from "../api/data.js";
+import { showError } from "./notify.js";
 
 
 export async function createView(ctx){
@@ -14,7 +15,7 @@ export async function createView(ctx){
         const inputs = Object.fromEntries(formData);
 
         if (inputs.title == '' || inputs.description == '' || inputs.imageUrl == ''){
-            alert("invalid entries!");
+            showError("invalid entries!");
             return
         }
         await createItem(inputs);

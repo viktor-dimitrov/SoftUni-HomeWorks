@@ -7,6 +7,8 @@ export async function profilView(ctx){
     const user = getUserData();
     const items = await getMyItems(user._id);
 
+    console.log(user.username)
+
     ctx.render(profilTemplate(user, items));
 
 }
@@ -22,7 +24,6 @@ function profilTemplate(user, items){
                     <p>Username: ${user.username}</p>
                     <p>Email: ${user.email}</p>
                     <p>My memes count: ${items.length}</p>
-
                 </div>
             </article>
             <h1 id="user-listings-title">User Memes</h1>

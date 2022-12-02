@@ -12,13 +12,16 @@ const endpoints = {
 
 
 
-export async function login(email, password) {
-    const {_id, email: resultEmail, accessToken} = await post(endpoints.login, {email, password} );
+export async function login(inputs) {
+    const {_id, email: resultEmail, accessToken, imageUrl, username, gender} = await post(endpoints.login, inputs );
 
     setUserData({
         _id,
         email: resultEmail,
-        accessToken
+        accessToken,
+        imageUrl,
+        username,
+        gender
     });
 }
 

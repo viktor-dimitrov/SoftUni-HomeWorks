@@ -1,5 +1,7 @@
 import {html} from "../../node_modules/lit-html/lit-html.js";
 import { login } from "../api/user.js";
+import { showError } from "./notify.js";
+
 
 
 export function loginView(ctx){
@@ -9,19 +11,14 @@ export function loginView(ctx){
     async function onLog(e){
         e.preventDefault();
         const formData = new FormData(e.target);
-        const {email, password} = Object.fromEntries(formData);
-        if(!email || !password){
-            const notify = new Notification('Hi there!', {
-                body: 'How are you doing?',
-                icon: 'sdf'
-              })
-
-              window.notify
+        const inputs = Object.fromEntries(formData);
+        if(!inputs.email || !inputs.password){
+            showError("Invalid entries!");
 
             return        
         }
 
-        await login(email, password);
+        await login(inputs);
         ctx.updateNav()
         ctx.page.redirect("/catalog");
 

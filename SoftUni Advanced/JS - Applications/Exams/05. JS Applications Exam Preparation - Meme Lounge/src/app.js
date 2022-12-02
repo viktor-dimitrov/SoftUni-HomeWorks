@@ -16,6 +16,9 @@ import { registerView } from "./view/register.js";
 const main = document.getElementsByTagName('main')[0];
 const nav = document.getElementsByTagName('nav')[0];
 
+
+
+
 page(ctxDecorator)
 page("/index.html", "/");
 page("/", homeView);

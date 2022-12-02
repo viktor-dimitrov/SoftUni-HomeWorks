@@ -1,4 +1,5 @@
 import { getUserData } from "../util.js";
+import { showError } from "../view/notify.js";
 
 
 const host = 'http://localhost:3030';
@@ -36,7 +37,7 @@ export async function request(method, url, data) {
         return result;
 
     }catch(err){
-       alert(err.message);
+       showError(err.message);
        throw err
     }
 }

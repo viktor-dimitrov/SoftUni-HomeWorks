@@ -1,18 +1,18 @@
 import {html} from "../../node_modules/lit-html/lit-html.js";
 import { getAllItems } from "../api/data.js";
+import { showError } from "./notify.js";
+
 
 
 export async function catalogView(ctx){
 
     const items = await getAllItems();
-
-    console.log(items)
-
     ctx.render(catalogTemplate(items));
 
 }
 
 function catalogTemplate(items){
+    
 return html`
         <section id="meme-feed">
             <h1>All Memes</h1>
