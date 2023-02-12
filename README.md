@@ -24,7 +24,7 @@ I'd like to extend a warm thank you to [Software University](https://softuni.bg/
 
 ## Contact
 
-If you have any questions or comments, feel free to reach out to me at [konspirat0r@students.softuni.bg].
+If you have any questions or comments, feel free to reach out to me at konspirat0r@students.softuni.bg .
 
 I hope you enjoy revisiting my completed homeworks and projects!
 
