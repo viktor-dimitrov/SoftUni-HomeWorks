@@ -1,0 +1,16 @@
+
+
+
+#wrapper {
+    background-color: #dddddd;
+    width: 300px;
+    border: 1px solid #000000;
+    color: #95191a;
+}
+
+/* 
+<main> with id=wrapper as a container
+o Background color: #dddddd;
+o Text color: #95191a;
+o Width container: 300px;
+o Border: 1px solid #000000; */
