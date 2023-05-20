@@ -1,0 +1,41 @@
+
+
+body {
+    text-align: center;
+}
+
+h1 {
+    font-family: Sentinel A, Sentinel B, Georgia, Times New Roman, Times, serif ;
+    line-height: 1.15;
+    font-weight: 400;
+    color:#747474;
+  
+
+}
+
+span {
+    font-family: Graphik Semibold Web, Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif ;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.46;
+    font-style: oblique;
+    color: #5c5a5a;
+   
+}
+
+p {
+    font-family: Graphik Regular Web, Helvetica Neue, Helvetica, Arial, sans-serif ;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.46;
+    color: #5c5a5a;
+}
+
+
+/* <p>:
+o Fonts: Graphik Regular Web, Helvetica Neue, Helvetica, Arial
+o Generic Font: sans-serif
+o Font weight 400
+o Font size: 16px
+o Height of the line: 1.46
+o Text color: #5c5a5a */
