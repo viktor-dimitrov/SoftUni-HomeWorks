@@ -1,0 +1,32 @@
+
+
+html {
+    font-family: Helvetica, sans-serif;
+    
+}
+
+body {
+    padding: 30px 40px;
+}
+
+header * {
+    display: inline-block;
+}
+
+header {
+    border-bottom: 3px solid gray;
+}
+
+
+a {
+    text-decoration: none;
+    margin: 10px;
+    color: green;
+}
+
+main h1 {
+    font-family: Georgia, serif;
+    font-weight: 200;
+}
+
+
