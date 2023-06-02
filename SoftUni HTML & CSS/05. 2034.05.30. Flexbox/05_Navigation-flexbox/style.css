@@ -1,0 +1,49 @@
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    padding: 16px 32px;
+}
+
+header {
+    display: flex;
+    border-bottom: 2px solid rgb(0,0,0);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header h1 { 
+    text-transform: uppercase;
+}
+
+nav {
+    width: 30%;
+}
+
+ ul {
+    display:flex;
+    justify-content: space-evenly;
+    
+}
+
+li {
+   
+}
+
+a {
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}
+
+/* 
+• The bottom border in the header must have
+o Border width - 2px
+o Border color - rgb(0, 0, 0)
+o Border style - solid
+• The display property of the header must be flex
+• The unordered list in the header must have display property flex */
