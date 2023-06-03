@@ -1,0 +1,38 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body, ul, li {
+    display:flex;
+}
+
+section {
+    background-color: #eeeeee;
+    padding: 64px 32px;
+}
+
+ul {
+    justify-content: space-between;
+
+    flex-wrap: wrap;
+    flex: 1 1 auto;
+}
+
+li {
+    min-width: 30%;
+    align-items: center;
+    border: 8px solid black;
+    padding: 32px 16px;
+    gap:8px;
+    margin-bottom: 32px;
+    background-color: white;
+  
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
