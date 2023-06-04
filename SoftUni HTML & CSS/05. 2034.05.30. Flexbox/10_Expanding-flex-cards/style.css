@@ -1,0 +1,38 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(238, 238, 238) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    gap:1em;
+}
+
+.card {
+    width: 5em;
+    overflow: hidden;
+    border-radius: 0.5em;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 0 1em 0;
+    flex: 0 0 auto;
+   
+ }
+
+ .card:hover {
+    width: 25em;
+   
+ }
+
+ img {
+    display: block;
+    width:auto;
+    height: 100%;
+  
+ }
