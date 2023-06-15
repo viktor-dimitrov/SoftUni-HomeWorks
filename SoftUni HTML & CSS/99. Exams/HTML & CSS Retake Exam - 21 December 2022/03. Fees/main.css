@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html {
+    font: normal 16px/1.6 'Lato', sans-serif;
+    color: #6a6886;
+}
+
+p {
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    max-width: 1366px;
+}
+
+
+header {
+    display:flex;
+    justify-content: space-between;
+    margin: 1em 4em;
+    
+}
+
+header nav {
+    display:flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+header a{
+    text-decoration: none;
+    margin-left: 1em;
+    color:#6a6886;
+    font-weight: 600;
+}
+
+header img {
+    width:200px;
+    height: auto;
+   
+}
+
+.grey {
+    background-color: #565670;
+    padding: 3em 0;
+    
+}
+
+.hero {
+    position:relative;
+}
+
+.hero h2 {
+    text-align: center;
+}
+
+.calculator {
+    position:relative;
+    left: -65px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 140px;
+}
+
+.container h1 {
+    color:white;
+    padding-bottom: 1em;
+}
+
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    gap:1em;
+    max-width: 1366px;
+
+    
+    
+}
+
+.card {
+    display:flex;
+    flex:0 0 28%;
+    border-radius: 8px;
+    border:1px solid grey;
+    background-color: white;
+    overflow:hidden;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+  
+}
+
+.card .info {
+    padding: 1em;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    gap:1em;
+}
+
+.info div {
+    text-align: center;
+}
+
+.card .info {
+    height:70%;
+}
+
+.info p {
+    display:block;
+    text-align: center;
+}
+
+.card a {
+    display: block;
+    text-align: center;
+    background-color: #9c5fcd;
+    color: white;
+    text-decoration: none;
+    border-radius: 6em;
+    padding:0.5em  2em;
+    margin-top: 2em;
+    font-weight: 600;
+    box-shadow: 2px 5px 5px #565670;
+}
+
+.card .promo {
+    display: flex;
+    height: 100px;
+    width:100%;
+    align-items: center;
+  
+    /* justify-content: space-evenly; */
+   
+
+    color: white;
+}
+
+
+
+.card-1 .promo {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  
+    background: rgb(6,160,66);
+    background: linear-gradient(90deg, rgba(6,160,66,1) 26%, rgba(88,241,146,1) 98%);
+}
+
+.separator {
+    width:1px;
+    background-color: white;
+   
+    height:70%;
+   
+    
+}
+
+.promo-1, .promo-2 {
+    width: 49%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card-2 .separator {
+    width: 2px;
+}
+
+.card-2 .promo {
+    background: rgb(80,113,141);
+    background: linear-gradient(90deg, rgba(80,113,141,1) 26%, rgba(99,154,208,1) 98%);
+}
+
+.card-3 .promo {
+    background: rgb(80,61,176);
+background: linear-gradient(90deg, rgba(80,61,176,1) 26%, rgba(138,121,227,1) 98%);
+}
+
+.nothing {
+    height: 200px;
+}
+
+.options {
+    padding: 0 12em 2em 12em;
+}
+
+.options h2 {
+    margin-bottom: 1em;
+}
+
+.options > p {
+    margin-bottom: 2em;
+}
+
+.options ul {
+    border-top-left-radius: 8px;
+    overflow: hidden;
+}
+
+.options li {
+    padding: 0.6em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.options li p {
+    display:block;
+    width: 60%;
+}
+
+.options ul li span:nth-child(3) {
+   height: 20px;
+}
+
+.options li:nth-child(odd) {
+    background-color:#ededed;
+}
+
+
+.bank {
+    display:flex;
+    justify-content: space-between;
+    margin: 3em 0em 6em 6em;
+}
+
+.bank-info {
+    width:70%;
+}
+
+footer {
+    background-color: #565670;
+    padding: 1em;
+    text-align: center;
+}
