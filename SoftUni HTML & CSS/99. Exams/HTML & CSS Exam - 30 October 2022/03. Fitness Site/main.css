@@ -1,0 +1,196 @@
+
+
+html {
+    font-family: 'PT Sans', sans-serif;;
+}
+
+h1 {
+    font-size:3rem;
+    letter-spacing: 0.5rem;
+ 
+    margin-bottom: 2rem;
+}
+
+h4, h5 {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+
+ display:flex;
+ justify-content: center;
+   
+}
+
+main {
+    max-width: 1366px;
+    
+}
+
+.hero {
+    max-height: 768px;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.hero a {
+    color:#fefdfe
+}
+
+.img {
+    height: 440px;
+}
+
+.img img {
+    display:block;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.top {
+    background-color: #d01919;
+
+    display: flex;
+    justify-content: space-between;
+    padding:1rem 2rem;
+    color: #fefdfe;
+    width:100%;
+  
+}
+
+ ul {
+    display:flex;
+    gap:1rem;
+
+}
+
+nav {
+   
+    position:absolute;
+    top:70px;
+    right: 2em;
+    max-width: 100%;
+  
+    
+ 
+}
+
+nav a{
+   
+    margin-left: 3em;
+}
+
+.get-started {
+    position: absolute;
+    bottom: 6rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    color: #fefdfe;
+}
+
+.get-started p {
+    max-width: 33%;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.get-started a {
+    display: block;
+    background-color: #d01919;
+    padding: 0.2rem 1rem;
+    border-radius: 3px;
+}
+
+
+.welcome {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 5rem;
+}
+
+.grid {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+   
+}
+
+.grid article {
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.grid img {
+    width:20%;
+    object-fit: cover;
+}
+
+.grid h5 {
+    color:#d01919;
+   
+}
+
+.grid p {
+    text-align: center;
+    width: 90%;
+}
+
+.line {
+    height: 2px;
+    background-color: #d01919;
+    width: 2rem;
+    margin-bottom: 2rem;
+}
+
+.welcome h2 {
+    margin-bottom: 1rem;
+}
+
+.coaches {
+    background-color: #efefef;
+    padding: 2rem 2.5rem;
+    
+}
+
+.coaches .grid img {
+    width:80%;
+   
+}
+
+.coaches p {
+    width: 80%;
+    color:#a6a1ac;
+}
+
+.coaches h5 {
+    margin: 0.5rem;
+}
+
+.coaches h4 {
+    margin-top: 0.5rem;
+}
+
+
+footer {
+    background-color: #d01919;
+    padding:1rem 2rem;
+    color: black;
+    width:100%;
+}
+
+footer p {
+    text-align: center;
+}
