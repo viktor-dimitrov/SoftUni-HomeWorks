@@ -1,0 +1,135 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+html {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+
+main {
+    width:100vw;
+    height: 100vh ;
+    position: relative;
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+section {
+    height: 90%;
+    padding: 2em 4em;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+article {
+    background-color:#ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+
+}
+
+i {
+    font-size: 3rem;
+}
+
+.text {
+    width: 65%;
+}
+
+.img-container {
+    width: 30%;
+  
+
+}
+
+.img-container img {
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    filter: grayscale(100%);
+}
+
+.left {
+    display:flex;
+    flex-direction: column;
+   justify-content: space-between;
+    width: 60%;
+ 
+
+}
+
+.right {
+    display:flex;
+
+    width:30%;
+    height: 100%;
+
+}
+
+.one {
+    height:35%;
+}
+
+.two {
+    height:35%;
+}
+
+.three {
+    display: flex;
+    flex-direction: column;
+}
+
+.person {
+    display: flex;
+    border-top: 1px solid grey;
+    align-items: center;
+  
+}
+
+.person .img-container {
+    height: 70%;
+    margin-right: 1rem;
+}
+
+.person p {
+    font-size: 0.7rem;
+    margin: 0;
+}
+
+.person h3 {
+    
+    margin: 0;
+}
+
+
+.three i {
+    font-size: 4rem ;
+}
+
+p {
+    color: #8e9291;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
